@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadiya College Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <h1>Sadiya College Quiz</h1>
+        <div id="name-container">
+            <label for="student-name">Enter your Name: </label>
+            <input type="text" id="student-name" placeholder="Enter your name" />
+            <button id="start-button" onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+    <div class="quiz-container" id="quiz-game-container" style="display: none;">
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options"></div>
+        </div>
+        <div id="question-progress">
+            <p id="current-question">Question 1 of 25</p>
+        </div>
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Next Question</button>
+    </div>
+    <div class="quiz-container" id="result-container" style="display: none;">
+        <h2>Quiz Completed!</h2>
+        <p id="result"></p>
+        <p>Your final score is: <span id="final-score"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
